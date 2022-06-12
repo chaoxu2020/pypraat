@@ -9,8 +9,8 @@ def parse_textgrid(filepath, tier_num):
     return itv
 
 
-fp_chk = r"D:\pypraat\tg_chked\smcs0127.TextGrid"
-fp_ori = r"D:\pypraat\tg_ori\smcs0127.TextGrid"
+fp_chk = r".\tg_chked\smcs0127.TextGrid"
+fp_ori = r".\tg_ori\smcs0127.TextGrid"
 
 t1 = parse_textgrid(fp_ori, 3)
 t2 = parse_textgrid(fp_chk, 3)
