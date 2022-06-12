@@ -4,3 +4,7 @@
 
 # Praat TextGrid Data files
 *.TextGrid
+
+# IDEA files
+*.xml
+*.iml
