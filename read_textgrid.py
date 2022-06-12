@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import textgrids
 import pympi.Praat as prt
+import os
 
 
 def parse_textgrid(filepath, tier_num):
@@ -15,7 +16,9 @@ fp_ori = r".\tg_ori\smcs0127.TextGrid"
 
 t1 = parse_textgrid(fp_ori, 3)
 t2 = parse_textgrid(fp_chk, 3)
-print(max(len(t1), len(t2)))
+print(os.path.basename(fp_ori), "Interval num:", len(t1), sep=" ")
+print(os.path.basename(fp_chk), "Interval num:", len(t2), sep=" ")
+print("Max num of intervals:", max(len(t1), len(t2)), sep=" ")
 
 for i in range(max(len(t1), len(t2))):
     # print("Original:", t1[i][2], "; Modified:", t2[i][2])
