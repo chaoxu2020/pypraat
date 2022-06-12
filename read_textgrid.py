@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import textgrids
 import pympi.Praat as prt
 
